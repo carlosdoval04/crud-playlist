@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Minha Playlist</h1>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="input-field">
+          <input type="text" id="nome-da-musica" placeholder="Nome da Música">
+          <button class="btn waves-effect waves-light" onclick="adicionarMusica()">Adicionar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <ul id="playlist" class="collection">
+        <!-- Itens da playlist serão adicionados aqui -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
