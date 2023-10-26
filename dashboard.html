@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Trap CRUD - Cadastro</title>
+    <title>Dashboard de Músicas</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="center-align">Visualização de Músicas</h1>
-
+        <h1 class="center-align">Dashboard de Músicas</h1>
+        <div id="item-list" class="row">
+            <!-- Itens adicionados serão exibidos aqui -->
+        </div>
         <div class="row">
+            <a href="visualizacao.html" class="waves-effect waves-light btn">Voltar para a Visualização</a> 
             <div class="col s12">
-                <a href="cadastro.html" class="waves-effect waves-light btn">Voltar para o Cadastro</a>
-                <ul class="collection" id="item-list">
-                </ul>
+                <canvas id="chart-container" width="400" height="200"></canvas>
             </div>
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="script-visualizacao.js"></script>
+    <script src="script-dashboard.js"></script>
 </body>
 </html>
